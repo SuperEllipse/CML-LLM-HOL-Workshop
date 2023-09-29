@@ -1,15 +1,22 @@
 #  GenAI CML Workshop / Hands-on-Lab
 
-## Content Synopsis
+## Table of Contents
 
+### [1 Objective](#1-Objective)
+### [2 Getting Started](#2-getting-started)
+#### &nbsp;&nbsp;&nbsp;&nbsp;[2.1 Setting up a CML Workspace for GPU](#21-setting-up-a-cml-workspace-for-gpu)
 
+### [3 The Lab Exercises](#3-the-lab-exercises)  
+#### &nbsp;&nbsp;&nbsp;&nbsp;[3.1 Accessing Language Models and Datasets](#31-accessing-large-language-models-and-datasets)
+#### &nbsp;&nbsp;&nbsp;&nbsp;[3.2 Setting up Libraries](#32-setting-up-libraries)
+#### &nbsp;&nbsp;&nbsp;&nbsp;[3.3 Exercises on using LLMs on CML ](#33-exercises-on-using-llms-on-cml)
 
-## 1 Objective: 
+## 1 Objective
 The purpose of this Workshop is to enable existing or prospective customers to experience how they can use Cloudera Machine Learning(CML) for developing Generative AI Applications. 
 This workshop will focus on th uses cases around using Large Language Models popularly abbreviated as LLMs.CML offers prototypes called as AMPs ( Applied Machine Learning Prototypes) 
 that can be used to quickly spinoff LLL Applications. Please refer to references for more details on this topic
  
-## 2 Getting Started: 
+## 2 Getting Started
 Most LLM Models will employ some GPU compute and hence it is essential that at this point you have access to GPU Hardware. 
 If you are on CML Public cloud the best way to get started is to provision a new Workspace and set it up to include a GPU. For almost  
 all the exercises here i use the basic V100 GPU. Here i use mostly Amazon Web Services (AWS) to set up necessary compute but it really is not necessary to use AWS. You can set up any other Hyperscaler to work with CML as well. Refer to CML Public cloud documentation on the web if necessary.
@@ -23,7 +30,7 @@ In order to work with GPUs your CML Workspace must be provisioned with GPU Compu
  ![GPU instance in AWS](images/gpus-on-aws.png)
  &nbsp;
 
-### Important Note: 
+### Important Note
   Make sure that you are either using a GPU provisioned workspace or are able to create a workspace with the GPU instance successfully before proceeding further with this workshop/ demo**
 
 ## 3 The Lab Exercises
@@ -33,10 +40,10 @@ In all the exercises we will be accessing Huggingface hub as a source for the mo
 2. Setup an Access token on Hugging Face
 ![HF Readonly Token](images/hf_token.png)
 
-### 3.2 Setting up libraries 
+### 3.2 Setting up libraries
 To get started please execute the bootstrap.py on a terminal to set up the libraries required for you to get starated
 
-## 3.3 Exercises on using LLMs on CML 
+## 3.3 Exercises on using LLMs on CML
 ---
 Clicking on each leads you to a folder with a notebook and/or code artefacts folder
 1. **[Prompting LLMs](001_prompting-llms) :** Downloading and Prompting a pretrained LLM from Hugging on CML. 
