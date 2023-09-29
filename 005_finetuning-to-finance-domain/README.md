@@ -2,8 +2,7 @@
 ## Objective: 
 In this use case we will use adapt a large language Model to financial domain by fine tuning the model to a custom dataset. The idea is to make the model
 more context aware to financial data and serve as a helpful tool for the task of providing summaries of financial documents that contains both textual and 
-numerical information. To get an idea of the different possible domains that you can adapt LLM Use cases to, please refer to the picture below  
-
+numerical information. To get an idea of the different possible domains that you can adapt LLM Use cases refer to the picture in jupyter notebook.
 
 ## Description:
 Using LoRA adapters is now a popular technique for tuning large language models. This method is called as Performance Efficient Fine Tuning approach since 
