@@ -2,9 +2,8 @@
 ## Objective: 
 In this use case we will use adapt a large language Model to financial domain by fine tuning the model to a custom dataset. The idea is to make the model
 more context aware to financial data and serve as a helpful tool for the task of providing summaries of financial documents that contains both textual and 
-numerical information. To get an idea of the different possible domains that you can adapt LLM Use cases to, please refer to the picture below
+numerical information. To get an idea of the different possible domains that you can adapt LLM Use cases to, please refer to the picture below  
 
-![Language model adaptations in Enterprise Domain](https://github.com/SuperEllipse/CML-LLM-HOL-Workshop/tree/main/images/llm-in-enterprise-domains.png)
 
 ## Description:
 Using LoRA adapters is now a popular technique for tuning large language models. This method is called as Performance Efficient Fine Tuning approach since 
@@ -17,6 +16,5 @@ For finetuning we use the FINDSum Dataset, that has been created using 1000s of 
 ## Architecture Overview:
 In this example of domain adaptation, we use store the dataset in an s3 bucket and load the dataset using s3 libraries and Transformer libraries.for larger models S3 buckets
 can be considered for storing hte model in order to keep the CML Containers lightweight. The picture below represents a high level architecture of the 
-use case. 
+use case.  
 
-![Peft Finetuning with LoRA adapters](https://github.com/SuperEllipse/CML-LLM-HOL-Workshop/tree/main/images/peft-finetuning.png)
