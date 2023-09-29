@@ -1,8 +1,0 @@
-ipywidgets==8.1.1
-transformers
-datasets
-rouge-score
-nltk
-huggingface_hub
-tensorflow
-torch
