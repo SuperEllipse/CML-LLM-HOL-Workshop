@@ -50,8 +50,5 @@ Clicking on each leads you to a folder with a notebook and/or code artefacts fol
 2. **[Advanced Prompting](002_advanced-prompting) :** Work with a pretrained model to set up advanced prompting using Langchain Framework
 3. **[Instruction Tuning with Lang Chain](003_instruction-tuning-with-langchain) :** Work with Langchain framework for Instruction Tuning and Context Augmentation
 4. **[Deploying Models in CML using CML API](004_deploy-and-test-models)** : Use CML API to deploy a model as an API Endpoint and test the model in a command line or jupyter notebook
-5. **[Finetuning to Finance Domain](005_finetuning-to-finance-domain)e** : Use a custom Dataset to demonstrate fine tuning using LoRA adapters on a financial Dataset
-6. **Measuring Model Preformance( UNDER DEVELOPMENT)**  : Benchmark a pre-trained model and compare the model performance against the finetuned model in step 5. 
-7. **Developing and Deploying User Applications( UNDER DEVELOPMENT)**: 
-Use Gradio to build and deploy AI applications 
-8. **Distributing Fine-tuning Workloads on GPU( UNDER DEVELOPMENT)** : Distributing the finetuning workloads with DASK on CML 
+5. **[Finetuning to Finance Domain](005_finetuning-to-finance-domain)e** : Use a custom Dataset to demonstrate fine tuning using LoRA adapters on a 
+6. **Distributing Fine-tuning Workloads on GPU( UNDER DEVELOPMENT)** : Distributing the finetuning workloads with DASK on CML 
