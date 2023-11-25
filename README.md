@@ -30,9 +30,9 @@ This Hands On Lab is designed to walk you through the Services's main capabiliti
 
 ## Step by Step Instructions
 
-Detailed instructions are provided in the [step_by_step_guides]() folder.
+Detailed instructions are provided in the [step_by_step_guides](https://github.com/pdefusco/CML_LLM_HOL_Workshop/tree/main/step_by_step_guides) folder.
 
-* [Link to the English Guide]().
+* [Link to the English Guide](https://github.com/pdefusco/CML_LLM_HOL_Workshop/tree/main/step_by_step_guides/english).
 
 ## Other CDP Hands On Lab Workshops
 
