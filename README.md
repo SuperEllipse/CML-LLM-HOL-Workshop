@@ -27,6 +27,7 @@ This Hands On Lab is designed to walk you through the Services's main capabiliti
 3. Instruction Tuning with Lang Chain: Work with Langchain framework for Instruction Tuning and Context Augmentation.
 4. Deploying Models in CML using CML API: Use CML API to deploy a model as an API Endpoint and test the model in a command line or Jupyter Notebook.
 5. Finetuning to Finance Domain: Use a custom Dataset to demonstrate fine tuning using LoRA adapters on a financial Dataset.
+6. Implementing a Vector Database in CML
 
 ## Step by Step Instructions
 
