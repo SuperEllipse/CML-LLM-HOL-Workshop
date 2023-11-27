@@ -1,54 +1,46 @@
-#  GenAI CML Workshop / Hands-on-Lab
+# CML Large Language Models Hands-On-Lab Workshop
 
-## Table of Contents
+## About the Hands On Lab Workshops
 
-### [1 Objective](#1-Objective)
-### [2 Getting Started](#2-getting-started)
-#### &nbsp;&nbsp;&nbsp;&nbsp;[2.1 Setting up a CML Workspace for GPU](#21-setting-up-a-cml-workspace-for-gpu)
+The Hands-On Lab (HOL) Workshops are an initiative by Cloudera Solutions Engineering aimed at familiarizing CDP users with each Data Service. The content consists of a series of guides and exercises to quickly implement sample end-to-end use cases in the realm of Machine Learning, Datawarehousing, Data Engineering, Data Streaming and Operational Database.
 
-### [3 The Lab Exercises](#3-the-lab-exercises)  
-#### &nbsp;&nbsp;&nbsp;&nbsp;[3.1 Accessing Language Models and Datasets](#31-accessing-large-language-models-and-datasets)
-#### &nbsp;&nbsp;&nbsp;&nbsp;[3.2 Setting up Libraries](#32-setting-up-libraries)
-#### &nbsp;&nbsp;&nbsp;&nbsp;[3.3 Exercises on using LLMs on CML ](#33-exercises-on-using-llms-on-cml)
+The HOL is typically a three to four-hour event organized by Cloudera for CDP customers and prospects, where a small technical team from Cloudera Solutions Engineering provides cloud infrastructure for all participants and guides them through the completion of the labs with the help of presentations and open discussions.
 
-## 1 Objective
-The purpose of this Workshop is to enable existing or prospective customers to experience how they can use Cloudera Machine Learning(CML) for developing Generative AI Applications. 
-This workshop will focus on th uses cases around using Large Language Models popularly abbreviated as LLMs.CML offers prototypes called as AMPs ( Applied Machine Learning Prototypes) 
-that can be used to quickly spinoff LLL Applications. Please refer to references for more details on this topic
- 
-## 2 Getting Started
-Most LLM Models will employ some GPU compute and hence it is essential that at this point you have access to GPU Hardware. 
-If you are on CML Public cloud the best way to get started is to provision a new Workspace and set it up to include a GPU. For almost  
-all the exercises here i use the basic V100 GPU. Here i use mostly Amazon Web Services (AWS) to set up necessary compute but it really is not necessary to use AWS. You can set up any other Hyperscaler to work with CML as well. Refer to CML Public cloud documentation on the web if necessary.
+The HOL contained in this GitHub repository is dedicated to Cloudera Machine Learning. CML is the CDP Data Service for machine learning and AI commonly in Private and Public Clouds.
 
-### 2.1 Setting up a CML Workspace for GPU
-In order to work with GPUs your CML Workspace must be provisioned with GPU Compute and you will be needing to also use GPU runtimes. Couple of things may trip you up when you are trying to provision GPU infrastructure : 
-- The Cloud Provider may not have a GPU instance in the region that you are requesting the GPU. In this case you need to check the GPU availablity for that region. The best way to do that in case of AWS is to login to your AWS Account and check the available GPUs for the region in which you are creating the Workspace. Refer to the following  
-&nbsp;
- ![GPU Provisioning For CML](images/gpu-provision-cml.png)
- &nbsp;
- ![GPU instance in AWS](images/gpus-on-aws.png)
- &nbsp;
+The content is primarily designed for machine learning engineers, data scientists, and cloud architects. However, little to no code changes are typically required and non-technical stakeholders such as project managers and analysts are encouraged to actively take part.
 
-### Important Note
-  Make sure that you are either using a GPU provisioned workspace or are able to create a workspace with the GPU instance successfully before proceeding further with this workshop/ demo**
+HOL events are open to all CDP users and customers. If you would like Cloudera to host an event for you and your colleagues please contact your local Cloudera Representative or submit your information [through this portal](https://www.cloudera.com/contact-sales.html). Finally, if you have access to a CDE Virtual Cluster you are welcome to use this guide and go through the same concepts in your own time.
 
-## 3 The Lab Exercises
-### 3.1  Accessing Large Language Models and Datasets
-In all the exercises we will be accessing Huggingface hub as a source for the models. In order to do this it is a good idea to create an account on hugging face because in some cases hugging face may require a user access token to access Hugging face. Here are some somethings to do : 
-1. Create a new account on Hugging face if you do not have one. If you are a cloudera employee you can also use a corporate account ( cloudera account to login to Hugging face now)
-2. Setup an Access token on Hugging Face
-![HF Readonly Token](images/hf_token.png)
+## About the Cloudera Machine Learning (CML) Service
 
-### 3.2 Setting up libraries
-To get started please execute the bootstrap.py on a terminal to set up the libraries required for you to get starated
+Cloudera Machine Learning (CML) is Cloudera’s platform for machine learning and AI. CML unifies self-service data science and data engineering in a single, portable service as part of an enterprise data cloud for multi-function analytics on data anywhere.
 
-## 3.3 Exercises on using LLMs on CML
----
-Clicking on each leads you to a folder with a notebook and/or code artefacts folder
-1. **[Prompting LLMs](001_prompting-llms) :** Downloading and Prompting a pretrained LLM from Hugging on CML. 
-2. **[Advanced Prompting](002_advanced-prompting) :** Work with a pretrained model to set up advanced prompting using Langchain Framework
-3. **[Instruction Tuning with Lang Chain](003_instruction-tuning-with-langchain) :** Work with Langchain framework for Instruction Tuning and Context Augmentation
-4. **[Deploying Models in CML using CML API](004_deploy-and-test-models)** : Use CML API to deploy a model as an API Endpoint and test the model in a command line or jupyter notebook
-5. **[Finetuning to Finance Domain](005_finetuning-to-finance-domain)e** : Use a custom Dataset to demonstrate fine tuning using LoRA adapters on a 
-6. **Distributing Fine-tuning Workloads on GPU( UNDER DEVELOPMENT)** : Distributing the finetuning workloads with DASK on CML 
+Large scale organizations use CML to build and deploy machine learning and AI capabilities for business at scale, efficiently and securely. CML is built for the agility and power of cloud computing, but can also operate inside your private and secure data center.
+
+## About the Labs
+
+This Hands On Lab is designed to walk you through the Services's main capabilities and walk through the following use cases:
+
+1. Prompting LLMs: Downloading and Prompting a pretrained LLM from Hugging on CML.
+2. Advanced Prompting: Work with a pretrained model to set up advanced prompting using Langchain Framework.
+3. Instruction Tuning with Lang Chain: Work with Langchain framework for Instruction Tuning and Context Augmentation.
+4. Deploying Models in CML using CML API: Use CML API to deploy a model as an API Endpoint and test the model in a command line or Jupyter Notebook.
+5. Finetuning to Finance Domain: Use a custom Dataset to demonstrate fine tuning using LoRA adapters on a financial Dataset.
+6. Implementing a Vector Database in CML
+
+## Step by Step Instructions
+
+Detailed instructions are provided in the [step_by_step_guides](https://github.com/pdefusco/CML_LLM_HOL_Workshop/tree/main/step_by_step_guides) folder.
+
+* [Link to the English Guide](https://github.com/pdefusco/CML_LLM_HOL_Workshop/tree/main/step_by_step_guides/english).
+
+## Other CDP Hands On Lab Workshops
+
+CDP Data Services include Cloudera Machine Learning (CML), Cloudera Operational Database (COD), Cloudera Data Flow (CDF) and Cloudera Data Warehouse (CDW). HOL Workshops are available for each of these CDP Data Services.
+
+* [CDE Workshop](https://github.com/pdefusco/CDE119_ACE_WORKSHOP#cde-119-ace-hands-on-lab-workshop): Deploy an Ingestion, Transformation and Reporting pipeline with Spark 3.2. Learn about Iceberg's most popular features and orchestrate pipelines with Airflow. Use the CDE CLI and CDE Spark Submit Migration Tool to interact with CDE Virtual Clusters from your terminal.Finally, build a Python App leveraging the CDE API and monitor multiple CDE Virtual Clusters at the same time.
+* [CDF Workshop](https://github.com/cloudera-labs/edge2ai-workshop): Build a full OT to IT workflow for an IoT Predictive Maintenance use case with: Edge Flow Management with MQTT and MiNiFi for data collection; Data Flow management was handled by NiFi and Kafka, and Spark Streaming with Cloudera Data Science Workbench (CDSW) model to process data. The lab also includes content focused on Kudu, Impala and Hue.
+* [CDW Workshop](https://github.com/pdefusco/cdw-workshop): As a Big Data Engineer and Analyst for an Aeronautics corporation, build a Data Warehouse & Data Lakehouse to gain an advantage over your competition. Interactively explore data at scale. Create ongoing reports. Finally move to real-time analysis to anticipate engine failures. All using Apache Impala and Iceberg.
+* [CML MLOps Workshop](https://github.com/pdefusco/CML_MLOps_ACE_HOL): Implement an end to end MLOps pipeline with MLFlow, Spark and PyTorch. Learn about MLFlow Tracking, MLFlow Registry, CML APIv2 and MLOps best practices including model interpretability and reproducibility. This workshop walks you through the steps to support a model in production with cutting-edge tools and frameworks.
+* [CML Churn Workshop](https://github.com/ogakulov/CML_AMP_Churn_Prediction_mlflow): In this workshop you will build a Data ingestion and manipulation pipeline with Spark, leverage CML tooling for model development and experimentation and then deploy a model to a RESTful API endpoint. Finally you will build a frontend ML application to share your predictions.
